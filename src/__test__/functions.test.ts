@@ -7,7 +7,7 @@ describe("addTodo", () => {
         let todo: Todo [] = [];
 
         //act
-        addTodo('', todo);
+        addTodo("", todo);
 
         //assert
         expect(todo.length).toBe(1);  
@@ -17,7 +17,7 @@ describe("addTodo", () => {
         let todo: Todo [] = [];
     
         //act
-        addTodo('', todo);
+        addTodo("", todo);
     
         //assert
         expect(todo.length).toBe(0);
@@ -39,13 +39,13 @@ describe("changeTodo", () => {
 
 describe("removeAllTodos", () => {
     test ("should remove AllTodos",() => {
-        //Arrage
+        //arrage
         let todos: Todo[] = [new Todo("", true), new Todo("", true)];
     
-        //Act 
+        //act 
         removeAllTodos(todos);
     
-        //Assert
+        //assert
         expect(todos.length).toBe(0);
     });
 })
