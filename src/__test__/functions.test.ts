@@ -7,7 +7,7 @@ describe("addTodo", () => {
         let todo: Todo [] = [];
 
         //act
-        addTodo("", todo);
+        addTodo("test", todo);
 
         //assert
         expect(todo.length).toBe(1);  
